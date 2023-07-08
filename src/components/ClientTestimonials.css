@@ -1,0 +1,19 @@
+.picture{
+    display: flex;
+    
+}
+
+.box-1{
+    width: 300px;
+    height: 400px;
+}
+.box-2{
+    width: 300px;
+    height: 300px;
+}
+.custom-image {
+    width: 120px;
+    height: 120px;
+    /* margin-left: 110px;
+    margin-top: 10px; */
+}
