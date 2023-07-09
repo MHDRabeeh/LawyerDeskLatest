@@ -45,7 +45,7 @@ const LawsNrules = () => {
             />
             <button className="bg-[#0099FF] rounded-full px-7 py-1 w-3/5 p-1 ">
               <span className="text-white" style={{fontFamily:"urbanist"}}>Find </span>
-              <span className="font-semibold text-white" style={{fontFamily:"urbanist"}}>Laws, Rules & Documents</span>
+              <span className="font-semibold text-white" >Laws, Rules & Documents</span>
             </button>
           </div>
         </div>

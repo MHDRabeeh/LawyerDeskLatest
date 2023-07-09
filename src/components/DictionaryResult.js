@@ -9,11 +9,11 @@ const DictionaryResult = ({abduction}) => {
     setShowResult(!showResult);
   };
   return (
-    <div className="mt-5 p-3 rounded-lg  outline outline-offset-0 outline-[#FFCC00] shadow-lg">
+    <div className="mt-5 p-3 rounded-lg  outline outline-offset-0 outline-[#0099FF] shadow-lg bg-white">
       <div className="flex justify-between items-center"onClick={handleView}>
         <p className="font-semibold">{abduction.term}</p>
         <div
-          className="bg-yellow rounded-full w-fit drop-shadow-lg flex items-center cursor-pointer"
+          className="bg-[#0099FF] text-white rounded-full w-fit drop-shadow-lg flex items-center cursor-pointer"
           
         >
           {showResult ? (

@@ -9,7 +9,7 @@ const InputResult = () => {
     setShowResult(!showResult);
   };
   return (
-    <div className="mt-5 p-3 rounded-lg h-[79vh] overflow-y-scroll  outline outline-offset-0 outline-[#0099FF] shadow-lg bg-#f1f5f9" >
+    <div className="mt-5 p-3 rounded-lg  min-h-48 max-h-[79vh] overflow-y-scroll  outline outline-offset-0 outline-[#0099FF] shadow-lg bg-#f1f5f9" >
       <div className="flex justify-between items-center rounded-lg bg-white mb-1 p-1" >
         <p className="font-semibold" style={{fontFamily:"urbanist"}}>Right to Information Act, 2005</p>
         <div
