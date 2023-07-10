@@ -36,7 +36,35 @@ const Dictionary = () => {
         </div>
         {/* sub container */}
 
-        <div className="bg-[#f1f5f9] p-4  rounded-lg grid grid-cols-1 md:grid-cols-3 gap-4  content-start">
+        <div className="bg-[#f1f5f9] p-4  rounded-lg grid grid-cols-1 lg:grid-cols-3 gap-4  content-start">
+          <div className="bg-[#f1f5f9]  rounded-lg p-2 box-border  shadow-2xl mt-4 max-h-48 lg:order-last">
+            <div className="flex flex-row items-center justify-center gap-4 w-fit ">
+              <MdManageSearch className="md:w-9 md:h-9 " size={50} />
+
+              <p
+                className="font-semibold text-sm md:text-base"
+                style={{ fontFamily: "urbanist", fontWeight: "bold" }}
+              >
+                Search for a word or approximate meaning to get relevant words
+              </p>
+            </div>
+            {/* search area */}
+            <div className="flex  flex-col gap-4 mt-4 items-center">
+              <input
+                type="text"
+                placeholder="  Enter your query"
+                className="border rounded-lg h-10 w-full"
+              />
+              <button className=" bg-[#0099FF] text-white  rounded-full px-7 py-2 md:w-auto w-3/4 ">
+                <span style={{ fontFamily: "Open Sans", fontWeight: "500" }}>
+                  Find{" "}
+                </span>
+                <span className="font-bold " style={{ fontFamily: "urbanist" }}>
+                  Legal Terminology
+                </span>
+              </button>
+            </div>
+          </div>
 
           <div className="mt-5 p-3 rounded-lg h-48  shadow-lg max-h-48 shadow-xl bg-[#f1f5f9]"></div>
 
@@ -55,34 +83,7 @@ const Dictionary = () => {
             </div>
             <SimilarWords data={data} />
           </div>
-          <div className="bg-[#f1f5f9]  rounded-lg p-2 box-border  shadow-2xl mt-4 max-h-48">
-            <div className="flex flex-row items-center justify-center gap-4 w-fit ">
-              <MdManageSearch className="md:w-9 md:h-9 " size={50} />
 
-              <p
-                className="font-semibold text-sm md:text-base"
-                style={{ fontFamily: "urbanist", fontWeight: "bold" }}
-              >
-                Search for a word or approximate meaning to get relevant words
-              </p>
-            </div>
-            {/* search area */}
-            <div className="flex  flex-col gap-4 mt-4 items-center">
-              <input
-                type="text"
-                placeholder="  Enter your query"
-                className="border rounded-lg h-10 md:w-[28rem]"
-              />
-              <button className=" bg-[#0099FF] text-white  rounded-full px-7 py-1">
-                <span style={{ fontFamily: "Open Sans", fontWeight: "500" }}>
-                  Find{" "}
-                </span>
-                <span className="font-bold " style={{ fontFamily: "urbanist" }}>
-                  Legal Terminology
-                </span>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </>
